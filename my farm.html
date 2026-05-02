@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hulagabal Natural Farm</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- REPLACE YOUR <nav> SECTION WITH THIS -->
+
+    <nav>
+        <a href="#" class="logo-wrap">
+            <img src="logo1.png" alt="Hulagabal Farm Logo" class="logo-img">
+        </a>
+
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+        <ul>
+            <li><a href="#home" id="navHome">Home</a></li>
+            <li><a href="#mission" id="navMission">Mission</a></li>
+            <li><a href="#services" id="navServices">What We Do</a></li>
+            <li><a href="#highlights" id="navHighlights">Highlights</a></li>
+            <li><a href="#contact" id="navContact">Contact</a></li>
+            <li><a href="#" id="switchLang" onclick="switchLanguage()">ಕನ್ನಡ</a></li>
+        </ul>
+
+        <a class="whatsapp-btn" href="https://wa.me/918970711727" target="_blank" id="waBtn">
+            WhatsApp Us
+        </a>
+    </nav>
+
+    <header id="home">
+        <!-- REPLACE HERO TEXT -->
+
+        <div class="hero">
+            <h1 id="heroTitle">Welcome to<br>Hulagabal Natural Farm</h1>
+            <p id="heroText">Sustainable Farming • Goat Rearing • Natural Living</p>
+            <a class="cta" href="https://wa.me/918970711727" target="_blank" id="heroBtn">
+                Chat on WhatsApp
+            </a>
+        </div>
+    </header>
+
+    <!-- REPLACE YOUR SECTION HTML WITH IDs -->
+
+    <section class="mission" id="mission">
+        <h2 class="section-title" id="missionTitle">Our Mission</h2>
+        <p class="section-sub" id="missionText">
+            Our mission is to produce fresh, organic food through sustainable farming practices that honor the earth and
+            promote community well-being.
+        </p>
+    </section>
+
+    <section id="services">
+        <h2 class="section-title" id="servicesTitle">What We Do</h2>
+
+        <div class="grid">
+
+            <div class="card" onclick="openModal()" style="cursor: pointer;">
+                <h3 id="card1Title">🐐 Goat Farming</h3>
+                <p id="card1Text">Healthy goats with ethical care and natural feed.</p>
+            </div>
+
+            <div class="card">
+                <h3 id="card2Title">🌱 Organic Crops</h3>
+                <p id="card2Text">Fresh chemical-free crops grown with love.</p>
+            </div>
+
+            <div class="card">
+                <h3 id="card3Title">💧 Water Management</h3>
+                <p id="card3Text">Conserving water for a better tomorrow.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="highlight" id="highlights">
+        <h2 class="section-title" id="highlightTitle">Sustainable Practices</h2>
+
+        <div class="grid">
+
+            <div class="card">
+                <h3 id="high1Title">🌾 5 Acres</h3>
+                <p id="high1Text">Green productive farmland</p>
+            </div>
+
+            <div class="card">
+                <h3 id="high2Title">🐐 20+ Goats</h3>
+                <p id="high2Text">Healthy and growing herd</p>
+            </div>
+
+            <div class="card">
+                <h3 id="high3Title">💧 Natural Water</h3>
+                <p id="high3Text">Pure and sustainable source</p>
+            </div>
+
+            <div class="card">
+                <h3 id="high4Title">🌳 Multi-crop</h3>
+                <p id="high4Text">Diverse natural plantation</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title" id="contactTitle">Contact Us</h2>
+
+        <div class="contact-grid">
+
+            <div class="contact-box">
+                <h3 id="addressTitle">📍 Address</h3>
+                <p id="addressText">Atharga, Bijapur, Karnataka - 586112</p>
+            </div>
+
+            <div class="contact-box">
+                <h3 id="callTitle">📞 Call</h3>
+                <p id="callText">+91 8970711727</p>
+            </div>
+
+            <div class="contact-box">
+                <h3 id="emailTitle">✉ Email</h3>
+                <p id="emailText">hulagabal@gmail.com</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- Logo -->
+            <a href="#" class="footer-logo" aria-label="Hulagabal Farm Home">
+                <img src="logo1.png" alt="Hulagabal Farm Logo">
+            </a>
+
+            <!-- Text -->
+            <div class="footer-content">
+                <p class="tagline">Built with passion for sustainable living</p>
+                <p class="copyright">© 2026 Hulagabal Farm. All Rights Reserved.</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <div id="goatModal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2>🐐 Goat Rearing at Hulagabal</h2>
+            <hr>
+            <p>Our goats are raised with the highest standards of natural care in Bijapur.</p>
+            <ul>
+                <li><strong>Breeds:</strong> Healthy local and Osmanabadi breeds.</li>
+                <li><strong>Diet:</strong> 100% natural fodder and grains grown on our own 5 acres.</li>
+                <li><strong>Care:</strong> Stress-free environment with regular veterinary check-ups.</li>
+                <li><strong>Availability:</strong> We provide goats for breeding and organic manure for farms.</li>
+            </ul>
+            <a href="https://wa.me/918970711727" target="_blank" class="whatsapp-btn-small">Inquire on WhatsApp</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
