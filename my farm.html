@@ -8,7 +8,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
+    <link rel="icon" type="image/png" href="logo1.png">
 </head>
 
 <body>
@@ -43,8 +43,12 @@
             <h1 id="heroTitle">Welcome to<br>Hulagabal Natural Farm</h1>
             <p id="heroText">Sustainable Farming • Goat Rearing • Natural Living</p>
             <a class="cta" href="https://wa.me/918970711727" target="_blank" id="heroBtn">
-                Chat on WhatsApp
+                Get Price on WhatsApp
             </a>
+
+            <div class="trust-text" id="trustText">
+                ✅ Quick Reply &nbsp; | &nbsp; ✅ Direct From Farm &nbsp; | &nbsp; ✅ No Middlemen
+            </div>
         </div>
     </header>
 
@@ -68,14 +72,9 @@
                 <p id="card1Text">Healthy goats with ethical care and natural feed.</p>
             </div>
 
-            <div class="card">
+            <div class="card" onclick="openCropModal()" style="cursor: pointer;">
                 <h3 id="card2Title">🌱 Organic Crops</h3>
                 <p id="card2Text">Fresh chemical-free crops grown with love.</p>
-            </div>
-
-            <div class="card">
-                <h3 id="card3Title">💧 Water Management</h3>
-                <p id="card3Text">Conserving water for a better tomorrow.</p>
             </div>
 
         </div>
@@ -115,8 +114,9 @@
         <div class="contact-grid">
 
             <div class="contact-box">
-                <h3 id="addressTitle">📍 Address</h3>
-                <p id="addressText">Atharga, Bijapur, Karnataka - 586112</p>
+                <h3 id="addressTitle">📍 Address</h3> 
+                <a href="https://maps.app.goo.gl/kkDXy5uMoLf9TeYC6" target="_blank" id="mapText"> View on Map </a>
+    </p>
             </div>
 
             <div class="contact-box">
@@ -125,8 +125,12 @@
             </div>
 
             <div class="contact-box">
-                <h3 id="emailTitle">✉ Email</h3>
-                <p id="emailText">hulagabal@gmail.com</p>
+                <h3 id="whatsappTitle">💬 WhatsApp</h3>
+                <p>
+                    <a href="https://wa.me/918970711727" target="_blank" id="whatsappText">
+                        Chat With Us Now
+                    </a>
+                </p>
             </div>
 
         </div>
@@ -150,22 +154,50 @@
     </footer>
 
     <div id="goatModal" class="modal-overlay">
-        <div class="modal-content">
-            <span class="close-btn" onclick="closeModal()">&times;</span>
-            <h2>🐐 Goat Rearing at Hulagabal</h2>
-            <hr>
-            <p>Our goats are raised with the highest standards of natural care in Bijapur.</p>
-            <ul>
-                <li><strong>Breeds:</strong> Healthy local and Osmanabadi breeds.</li>
-                <li><strong>Diet:</strong> 100% natural fodder and grains grown on our own 5 acres.</li>
-                <li><strong>Care:</strong> Stress-free environment with regular veterinary check-ups.</li>
-                <li><strong>Availability:</strong> We provide goats for breeding and organic manure for farms.</li>
-            </ul>
-            <a href="https://wa.me/918970711727" target="_blank" class="whatsapp-btn-small">Inquire on WhatsApp</a>
-        </div>
-    </div>
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
 
-    <script src="script.js"></script>
+        <h2 id="goatModalTitle">🐐 Goat Rearing at Hulagabal</h2>
+        <hr>
+        <p id="goatModalDesc">Our goats are raised with the highest standards of natural care in Bijapur.</p>
+
+        <ul>
+            <li><strong id="breedLabel">Breeds:</strong> <span id="breedText">Healthy local and Osmanabadi breeds.</span></li>
+            <li><strong id="dietLabel">Diet:</strong> <span id="dietText">100% natural fodder and grains grown on our own 5 acres.</span></li>
+            <li><strong id="careLabel">Care:</strong> <span id="careText">Stress-free environment with regular veterinary check-ups.</span></li>
+            <li><strong id="availLabel">Availability:</strong> <span id="availText">We provide goats for breeding and organic manure for farms.</span></li>
+        </ul>
+
+        <a href="https://wa.me/918970711727" target="_blank" class="whatsapp-btn-small" id="goatWhatsappBtn">
+             🐐 Get Goat Price
+        </a>
+    </div>
+</div>
+
+<div id="cropModal" class="modal-overlay">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeCropModal()">&times;</span>
+
+        <h2 id="cropModalTitle">🌾 Crops We Grow at Hulagabal</h2>
+        <hr>
+        <p id="cropModalDesc">We cultivate nutritious and quality crops using natural farming methods in Bijapur.</p>
+
+        <ul>
+            <li><strong id="crop1Label">🌱 Chana Dal:</strong> <span id="crop1Text">Protein-rich pulses grown with healthy soil practices.</span></li>
+            <li><strong id="crop2Label">🌽 Maize:</strong> <span id="crop2Text">Fresh maize cultivated with balanced water management.</span></li>
+            <li><strong id="crop3Label">🌾 Wheat:</strong> <span id="crop3Text">Premium wheat grown naturally for healthy grains and flour.</span></li>
+            <li><strong id="crop4Label">🌿 Jowar:</strong> <span id="crop4Text">Traditional grain grown for food and fodder purposes.</span></li>
+            <li><strong id="crop5Label">🧅 Onion:</strong> <span id="crop5Text">Quality onions cultivated with care for freshness and storage.</span></li>
+            <li><strong id="crop6Label">🌍 Method:</strong> <span id="crop6Text">Sustainable farming with minimal chemicals and soil care.</span></li>
+        </ul>
+
+        <a href="https://wa.me/918970711727" target="_blank" class="whatsapp-btn-small" id="cropWhatsappBtn">
+            🌾 Get Crop Price
+        </a>
+    </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 
 </html>

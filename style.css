@@ -117,20 +117,51 @@ header {
     opacity: .95;
 }
 
+/* CTA Button */
 .cta {
     display: inline-block;
     padding: 15px 34px;
-    background: #16a34a;
-    color: #fff;
+    background: linear-gradient(135deg, #16a34a, #22c55e);
+    color: white;
     text-decoration: none;
-    border-radius: 40px;
-    font-weight: 600;
-    transition: 0.3s;
+    border-radius: 50px;
+    font-weight: 700;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    animation: pulse 2s infinite;
+    transition: 0.3s ease;
 }
 
+/* Hover */
 .cta:hover {
     transform: translateY(-3px);
-    background: #166534;
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.04); }
+    100% { transform: scale(1); }
+}
+
+/* Sticky Mobile Button */
+@media (max-width: 768px) {
+    .cta {
+        position: fixed;
+        bottom: 15px;
+        transform: translateX(-50%);
+        z-index: 999;
+        width: 90%;
+        text-align: center;
+    }
+}
+
+/* Trust Text */
+.trust-text {
+    margin-top: 14px;
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: 600;
+    text-align: center;
 }
 
 /* SECTIONS */
@@ -205,6 +236,11 @@ box-shadow:0 18px 35px rgba(0,0,0,0.12);
     text-align: center;
     box-shadow: 0 10px 25px rgba(0, 0, 0, .06);
 }
+
+.contact-box:hover{
+    transform:translateY(-8px);
+    box-shadow:0 18px 35px rgba(0,0,0,0.12);
+    }
 
 /* FOOTER */
 .footer {
