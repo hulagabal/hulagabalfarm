@@ -74,7 +74,7 @@ function switchLanguage() {
         document.getElementById("whatsappTitle").innerText = "💬 ವಾಟ್ಸಾಪ್";
         document.getElementById("whatsappText").innerText = "ಈಗಲೇ ಚಾಟ್ ಮಾಡಿ";
 
-        document.getElementById("goatModalTitle").innerText = "🐐 ಹುಳಗಾಬಾಳದಲ್ಲಿ ಮೇಕೆ ಸಾಕಣೆ";
+        document.getElementById("goatModalTitle").innerText = "🐐 ಹುಲಗಬಾಳದಲ್ಲಿ ಮೇಕೆ ಸಾಕಣೆ";
         document.getElementById("goatModalDesc").innerText = "ನಮ್ಮ ಮೇಕೆಗಳು ವಿಜಯಪುರದಲ್ಲಿ ನೈಸರ್ಗಿಕ ಮತ್ತು ಉತ್ತಮ ಆರೈಕೆಯೊಂದಿಗೆ ಸಾಕಲ್ಪಡುತ್ತವೆ.";
 
         document.getElementById("breedLabel").innerText = "ಜಾತಿಗಳು:";
@@ -92,7 +92,7 @@ function switchLanguage() {
         document.getElementById("goatWhatsappBtn").innerText = " 🐐 ಮೇಕೆಗಳ ಬೆಲೆ ತಿಳಿಯಿರಿ";
 
 
-        document.getElementById("cropModalTitle").innerText = "🌾 ಹುಳಗಾಬಾಳದಲ್ಲಿ ನಾವು ಬೆಳೆಸುವ ಬೆಳೆಗಳು";
+        document.getElementById("cropModalTitle").innerText = "🌾 ಹುಲಗಬಾಳದಲ್ಲಿ ನಾವು ಬೆಳೆಸುವ ಬೆಳೆಗಳು";
         document.getElementById("cropModalDesc").innerText = "ನಾವು ವಿಜಯಪುರದಲ್ಲಿ ನೈಸರ್ಗಿಕ ಕೃಷಿ ವಿಧಾನಗಳಿಂದ ಪೌಷ್ಟಿಕ ಮತ್ತು ಉತ್ತಮ ಗುಣಮಟ್ಟದ ಬೆಳೆಗಳನ್ನು ಬೆಳೆಸುತ್ತೇವೆ.";
 
         document.getElementById("crop1Label").innerText = "🌱 ಕಡಲೆ ಬೇಳೆ:";
@@ -111,7 +111,7 @@ function switchLanguage() {
         document.getElementById("crop5Text").innerText = "ತಾಜಾತನ ಮತ್ತು ಸಂಗ್ರಹಕ್ಕೆ ಸೂಕ್ತ ಗುಣಮಟ್ಟದ ಈರುಳ್ಳಿ.";
 
         document.getElementById("crop6Label").innerText = "🌍 ವಿಧಾನ:";
-        document.getElementById("crop6Text").innerText = "ಕಡಿಮೆ ರಾಸಾಯನಿಕ ಬಳಕೆ ಮತ್ತು ಮಣ್ಣಿನ ಆರೈಕೆಯ ಶಾಶ್ವತ ಕೃಷಿ.";
+        document.getElementById("crop6Text").innerText = "ಕಡಿಮೆ ರಾಸಾಯನಿಕ ಬಳಕೆ ಮತ್ತು ಮಣ್ಣಿನ ಆರೈಕೆಯ ಸುಸ್ಥಿರ ಕೃಷಿ.";
 
         document.getElementById("cropWhatsappBtn").innerText = "🌾 ಬೆಳೆಗಳ ಬೆಲೆ ತಿಳಿಯಿರಿ";
 
