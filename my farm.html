@@ -13,11 +13,11 @@
 
 <body>
 
-    <!-- REPLACE YOUR <nav> SECTION WITH THIS -->
+    <!-- <nav> SECTION -->
 
-    <nav>
+    <nav aria-label="Main Navigation">
         <a href="#" class="logo-wrap">
-            <img src="logo1.png" alt="Hulagabal Farm Logo" class="logo-img">
+            <img src="logo1.png" alt="Hulagabal Farm Logo" class="logo-img" loading="lazy">
         </a>
 
         <div class="menu-toggle" onclick="toggleMenu()">☰</div>
@@ -37,24 +37,25 @@
     </nav>
 
     <header id="home">
-        <!-- REPLACE HERO TEXT -->
+        <!-- HERO SECTION -->
 
         <div class="hero">
             <h1 id="heroTitle">Welcome to<br>Hulagabal Natural Farm</h1>
             <p id="heroText">Sustainable Farming • Goat Rearing • Natural Living</p>
-            <a class="cta" href="https://wa.me/918970711727" target="_blank" id="heroBtn">
+            <a class="cta" href="https://wa.me/918970711727?text=Hi%20I%20am%20interested%20in%20your%20farm%20products"
+                target="_blank" id="heroBtn">
                 Get Price on WhatsApp
             </a>
 
             <div class="trust-text" id="trustText">
-                ✅ Quick Reply &nbsp; | &nbsp; ✅ Direct From Farm &nbsp; | &nbsp; ✅ No Middlemen
+                ✅ Same Day Response | ✅ Direct Farmer Pricing | ✅ No Middlemen Margin
             </div>
         </div>
     </header>
 
-    <!-- REPLACE YOUR SECTION HTML WITH IDs -->
+    <!-- SECTION  -->
 
-    <section class="mission" id="mission">
+    <section class="mission" id="mission" aria-label="Our Mission">
         <h2 class="section-title" id="missionTitle">Our Mission</h2>
         <p class="section-sub" id="missionText">
             Our mission is to produce fresh, organic food through sustainable farming practices that honor the earth and
@@ -62,7 +63,7 @@
         </p>
     </section>
 
-    <section id="services">
+    <section id="services" aria-label="Farm Services">
         <h2 class="section-title" id="servicesTitle">What We Do</h2>
 
         <div class="grid">
@@ -80,8 +81,8 @@
         </div>
     </section>
 
-    <section class="highlight" id="highlights">
-        <h2 class="section-title" id="highlightTitle">Sustainable Practices</h2>
+    <section class="highlight" id="highlights" aria-label="Farm Highlights">
+        <h2 class="section-title" id="highlightTitle">Farm Highlights</h2>
 
         <div class="grid">
 
@@ -107,23 +108,45 @@
 
         </div>
     </section>
+    <section id="gallery">
 
-    <section id="contact">
+        <h2 class="section-title">Farm Gallery</h2>
+
+
+        <div class="gallery-grid">
+            <img src="images/goat1.jpg" alt="Goats at farm">
+            <img src="images/farm1.jpg" alt="Farm land">
+            <img src="images/crops.jpg" alt="Organic crops">
+            <img src="images/water.jpg" alt="Water source">
+            <img src="images/goat2.jpg" alt="Healthy goats">
+            <img src="images/field.jpg" alt="Green field">
+        </div>
+    </section>
+    <section class="cta-section" aria-label="Call to Action">
+        <h2 id="ctaTitle">Want Fresh Farm Products Directly?</h2>
+        <p id="ctaText">Chat with us now and get today's best price</p>
+        <a href="https://wa.me/918970711727?text=Hi%20I%20want%20farm%20products" target="_blank" class="cta"
+            id="ctaButton">
+            Chat on WhatsApp
+        </a>
+    </section>
+
+    <section id="contact" aria-label="Contact Information">
         <h2 class="section-title" id="contactTitle">Contact Us</h2>
 
         <div class="contact-grid">
 
             <div class="contact-box">
-                <h3 id="addressTitle">📍 Address</h3> 
+                <h3 id="addressTitle">📍 Address</h3>
                 <a href="https://maps.app.goo.gl/kkDXy5uMoLf9TeYC6" target="_blank" id="mapText"> View on Map </a>
-    </p>
+                </p>
             </div>
 
             <div class="contact-box">
                 <h3 id="callTitle">📞 Call</h3>
                 <p>
-                     <a href="tel:+918970711727" id="callText">+91 8970711727</a>
-                </p> 
+                    <a href="tel:+918970711727" id="callText">+91 8970711727</a>
+                </p>
             </div>
 
             <div class="contact-box">
@@ -156,50 +179,61 @@
     </footer>
 
     <div id="goatModal" class="modal-overlay">
-    <div class="modal-content">
-        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
 
-        <h2 id="goatModalTitle">🐐 Goat Rearing at Hulagabal</h2>
-        <hr>
-        <p id="goatModalDesc">Our goats are raised with the highest standards of natural care in Bijapur.</p>
+            <h2 id="goatModalTitle">🐐 Goat Rearing at Hulagabal</h2>
+            <hr>
+            <p id="goatModalDesc">Our goats are raised with the highest standards of natural care in Bijapur.</p>
 
-        <ul>
-            <li><strong id="breedLabel">Breeds:</strong> <span id="breedText">Healthy local and Osmanabadi breeds.</span></li>
-            <li><strong id="dietLabel">Diet:</strong> <span id="dietText">100% natural fodder and grains grown on our own 5 acres.</span></li>
-            <li><strong id="careLabel">Care:</strong> <span id="careText">Stress-free environment with regular veterinary check-ups.</span></li>
-            <li><strong id="availLabel">Availability:</strong> <span id="availText">We provide goats for breeding and organic manure for farms.</span></li>
-        </ul>
+            <ul>
+                <li><strong id="breedLabel">Breeds:</strong> <span id="breedText">Healthy local and Osmanabadi
+                        breeds.</span></li>
+                <li><strong id="dietLabel">Diet:</strong> <span id="dietText">100% natural fodder and grains grown on
+                        our own 5 acres.</span></li>
+                <li><strong id="careLabel">Care:</strong> <span id="careText">Stress-free environment with regular
+                        veterinary check-ups.</span></li>
+                <li><strong id="availLabel">Availability:</strong> <span id="availText">We provide goats for breeding
+                        and organic manure for farms.</span></li>
+            </ul>
 
-        <a href="https://wa.me/918970711727" target="_blank" class="whatsapp-btn-small" id="goatWhatsappBtn">
-             🐐 Get Goat Price
-        </a>
+            <a href="https://wa.me/918970711727" target="_blank" class="whatsapp-btn-small" id="goatWhatsappBtn">
+                🐐 Get Goat Price
+            </a>
+        </div>
     </div>
-</div>
 
-<div id="cropModal" class="modal-overlay">
-    <div class="modal-content">
-        <span class="close-btn" onclick="closeCropModal()">&times;</span>
+    <div id="cropModal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeCropModal()">&times;</span>
 
-        <h2 id="cropModalTitle">🌾 Crops We Grow at Hulagabal</h2>
-        <hr>
-        <p id="cropModalDesc">We cultivate nutritious and quality crops using natural farming methods in Bijapur.</p>
+            <h2 id="cropModalTitle">🌾 Crops We Grow at Hulagabal</h2>
+            <hr>
+            <p id="cropModalDesc">We cultivate nutritious and quality crops using natural farming methods in Bijapur.
+            </p>
 
-        <ul>
-            <li><strong id="crop1Label">🌱 Chana Dal:</strong> <span id="crop1Text">Protein-rich pulses grown with healthy soil practices.</span></li>
-            <li><strong id="crop2Label">🌽 Maize:</strong> <span id="crop2Text">Fresh maize cultivated with balanced water management.</span></li>
-            <li><strong id="crop3Label">🌾 Wheat:</strong> <span id="crop3Text">Premium wheat grown naturally for healthy grains and flour.</span></li>
-            <li><strong id="crop4Label">🌿 Jowar:</strong> <span id="crop4Text">Traditional grain grown for food and fodder purposes.</span></li>
-            <li><strong id="crop5Label">🧅 Onion:</strong> <span id="crop5Text">Quality onions cultivated with care for freshness and storage.</span></li>
-            <li><strong id="crop6Label">🌍 Method:</strong> <span id="crop6Text">Sustainable farming with minimal chemicals and soil care.</span></li>
-        </ul>
+            <ul>
+                <li><strong id="crop1Label">🌱 Chana Dal:</strong> <span id="crop1Text">Protein-rich pulses grown with
+                        healthy soil practices.</span></li>
+                <li><strong id="crop2Label">🌽 Maize:</strong> <span id="crop2Text">Fresh maize cultivated with balanced
+                        water management.</span></li>
+                <li><strong id="crop3Label">🌾 Wheat:</strong> <span id="crop3Text">Premium wheat grown naturally for
+                        healthy grains and flour.</span></li>
+                <li><strong id="crop4Label">🌿 Jowar:</strong> <span id="crop4Text">Traditional grain grown for food and
+                        fodder purposes.</span></li>
+                <li><strong id="crop5Label">🧅 Onion:</strong> <span id="crop5Text">Quality onions cultivated with care
+                        for freshness and storage.</span></li>
+                <li><strong id="crop6Label">🌍 Method:</strong> <span id="crop6Text">Sustainable farming with minimal
+                        chemicals and soil care.</span></li>
+            </ul>
 
-        <a href="https://wa.me/918970711727" target="_blank" class="whatsapp-btn-small" id="cropWhatsappBtn">
-            🌾 Get Crop Price
-        </a>
+            <a href="https://wa.me/918970711727" target="_blank" class="whatsapp-btn-small" id="cropWhatsappBtn">
+                🌾 Get Crop Price
+            </a>
+        </div>
     </div>
-</div>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

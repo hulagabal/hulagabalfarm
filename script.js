@@ -33,7 +33,7 @@ function switchLanguage() {
         document.getElementById("heroBtn").innerText =
             "ವಾಟ್ಸಾಪ್‌ನಲ್ಲಿ ಬೆಲೆ ತಿಳಿಯಿರಿ";
         document.getElementById("trustText").innerHTML =
-        "✅ ತಕ್ಷಣ ಉತ್ತರ &nbsp; | &nbsp; ✅ ನೇರವಾಗಿ ಫಾರ್ಮ್‌ನಿಂದ &nbsp; | &nbsp; ✅ ಮಧ್ಯವರ್ತಿಗಳಿಲ್ಲ";    
+            "✅ ಅದೇ ದಿನ ಉತ್ತರ | ✅ ನೇರ ರೈತ ಬೆಲೆ | ✅ ಮಧ್ಯವರ್ತಿಗಳಿಲ್ಲ";
 
         document.getElementById("missionTitle").innerText = "ನಮ್ಮ ಧ್ಯೇಯ";
         document.getElementById("missionText").innerText =
@@ -68,6 +68,10 @@ function switchLanguage() {
         document.getElementById("high4Text").innerText =
             "ವೈವಿಧ್ಯಮಯ ತೋಟ";
 
+        document.getElementById("ctaTitle").innerText = "ತಾಜಾ ಕೃಷಿ ಉತ್ಪನ್ನಗಳನ್ನು ನೇರವಾಗಿ ಬೇಕೇ?";
+        document.getElementById("ctaText").innerText = "ಈಗಲೇ ನಮ್ಮೊಂದಿಗೆ ಚಾಟ್ ಮಾಡಿ ಮತ್ತು ಇಂದಿನ ಅತ್ಯುತ್ತಮ ಬೆಲೆಯನ್ನು ಪಡೆಯಿರಿ";
+        document.getElementById("ctaButton").innerText = "ವಾಟ್ಸಾಪ್ನಲ್ಲಿ ಚಾಟ್ ಮಾಡಿ";
+
         document.getElementById("contactTitle").innerText = "ಸಂಪರ್ಕಿಸಿ";
         document.getElementById("addressTitle").innerText = "📍 ವಿಳಾಸ";
         document.getElementById("callTitle").innerText = "📞 ಕರೆ";
@@ -90,7 +94,6 @@ function switchLanguage() {
         document.getElementById("availText").innerText = "ಸಂಕರಣಕ್ಕಾಗಿ ಮೇಕೆಗಳು ಹಾಗೂ ಸಾವಯವ ಗೊಬ್ಬರ ಲಭ್ಯ.";
 
         document.getElementById("goatWhatsappBtn").innerText = " 🐐 ಮೇಕೆಗಳ ಬೆಲೆ ತಿಳಿಯಿರಿ";
-
 
         document.getElementById("cropModalTitle").innerText = "🌾 ಹುಲಗಬಾಳದಲ್ಲಿ ನಾವು ಬೆಳೆಸುವ ಬೆಳೆಗಳು";
         document.getElementById("cropModalDesc").innerText = "ನಾವು ವಿಜಯಪುರದಲ್ಲಿ ನೈಸರ್ಗಿಕ ಕೃಷಿ ವಿಧಾನಗಳಿಂದ ಪೌಷ್ಟಿಕ ಮತ್ತು ಉತ್ತಮ ಗುಣಮಟ್ಟದ ಬೆಳೆಗಳನ್ನು ಬೆಳೆಸುತ್ತೇವೆ.";
@@ -115,7 +118,6 @@ function switchLanguage() {
 
         document.getElementById("cropWhatsappBtn").innerText = "🌾 ಬೆಳೆಗಳ ಬೆಲೆ ತಿಳಿಯಿರಿ";
 
-        
 
     } else {
         document.documentElement.lang = "en";
@@ -135,7 +137,7 @@ function switchLanguage() {
         document.getElementById("heroBtn").innerText =
             "Get Price on WhatsApp";
         document.getElementById("trustText").innerHTML =
-        "✅ Quick Reply &nbsp; | &nbsp; ✅ Direct From Farm &nbsp; | &nbsp; ✅ No Middlemen";            
+            "✅ Same Day Response | ✅ Direct Farmer Pricing | ✅ No Middlemen Margin";
 
         document.getElementById("missionTitle").innerText = "Our Mission";
         document.getElementById("missionText").innerText =
@@ -170,6 +172,10 @@ function switchLanguage() {
         document.getElementById("high4Text").innerText =
             "Diverse natural plantation";
 
+        document.getElementById("ctaTitle").innerText = "Want Fresh Farm Products Directly?";
+        document.getElementById("ctaText").innerText = "Chat with us now and get today's best price";
+        document.getElementById("ctaButton").innerText = "Chat on WhatsApp";
+
         document.getElementById("contactTitle").innerText = "Contact Us";
         document.getElementById("addressTitle").innerText = "📍 Address";
         document.getElementById("callTitle").innerText = "📞 Call";
@@ -192,7 +198,6 @@ function switchLanguage() {
         document.getElementById("availText").innerText = "We provide goats for breeding and organic manure for farms.";
 
         document.getElementById("goatWhatsappBtn").innerText = "🐐 Get Goat Price";
-
 
         document.getElementById("cropModalTitle").innerText = "🌾 Crops We Grow at Hulagabal";
         document.getElementById("cropModalDesc").innerText = "We cultivate nutritious and quality crops using natural farming methods in Bijapur.";
@@ -217,7 +222,7 @@ function switchLanguage() {
 
         document.getElementById("cropWhatsappBtn").innerText = "🌾 Get Crop Price";
 
-        
+
     }
 }
 
@@ -232,13 +237,7 @@ function closeModal() {
     document.getElementById("goatModal").style.display = "none";
 }
 
-window.onclick = function (event) {
-    let modal = document.getElementById("goatModal");
 
-    if (event.target === modal) {
-        modal.style.display = "none";
-    }
-};
 
 /* =========================
    CROP POPUP MODAL
@@ -252,7 +251,12 @@ function closeCropModal() {
 }
 
 window.onclick = function (event) {
+    let goatModal = document.getElementById("goatModal");
     let cropModal = document.getElementById("cropModal");
+
+    if (event.target === goatModal) {
+        goatModal.style.display = "none";
+    }
 
     if (event.target === cropModal) {
         cropModal.style.display = "none";
