@@ -27,7 +27,7 @@ function switchLanguage() {
         document.getElementById("waBtn").innerText = "ವಾಟ್ಸಾಪ್";
 
         document.getElementById("heroTitle").innerHTML =
-            "ಸ್ವಾಗತ<br>ಹುಲಗಬಾಳ ನ್ಯಾಚುರಲ್ ಫಾರ್ಮ್";
+            "ಹುಲಗಬಾಳ ನ್ಯಾಚುರಲ್ ಫಾರ್ಮ್ ಗೆ ಸ್ವಾಗತ.";
         document.getElementById("heroText").innerText =
             "ಸುಸ್ಥಿರ ಕೃಷಿ • ಮೇಕೆ ಸಾಕಣೆ • ನೈಸರ್ಗಿಕ ಜೀವನ";
         document.getElementById("heroBtn").innerText =
@@ -48,6 +48,9 @@ function switchLanguage() {
         document.getElementById("card2Title").innerText = "🌱 ಸಾವಯವ ಬೆಳೆಗಳು";
         document.getElementById("card2Text").innerText =
             "ರಾಸಾಯನಿಕ ರಹಿತ ತಾಜಾ ಬೆಳೆಗಳು.";
+
+        document.getElementById("galleryTitle").innerText = "ನಮ್ಮ ಫಾರ್ಮ್ ಗ್ಯಾಲರಿ";
+        document.getElementById("galleryText").innerText = "ತಾಜಾ, ನೈಸರ್ಗಿಕ ಮತ್ತು ಕಾಳಜಿಯಿಂದ ಬೆಳೆದವು 🌱";    
 
         document.getElementById("highlightTitle").innerText =
             "ಫಾರ್ಮ್ ವಿಶೇಷತೆಗಳು";
@@ -72,12 +75,19 @@ function switchLanguage() {
         document.getElementById("ctaText").innerText = "ಈಗಲೇ ನಮ್ಮೊಂದಿಗೆ ಚಾಟ್ ಮಾಡಿ ಮತ್ತು ಇಂದಿನ ಅತ್ಯುತ್ತಮ ಬೆಲೆಯನ್ನು ಪಡೆಯಿರಿ";
         document.getElementById("ctaButton").innerText = "ವಾಟ್ಸಾಪ್ನಲ್ಲಿ ಚಾಟ್ ಮಾಡಿ";
 
+
         document.getElementById("contactTitle").innerText = "ಸಂಪರ್ಕಿಸಿ";
-        document.getElementById("addressTitle").innerText = "📍 ವಿಳಾಸ";
+        
+        document.querySelector("#addressTitle h3").innerText = "📍 ವಿಳಾಸ";
+        document.getElementById("farmAddress").innerHTML = "<strong>ಹುಲಗಬಾಳ ನ್ಯಾಚುರಲ್ ಫಾರ್ಮ್</strong><br>ಅಥರ್ಗಾ-586112, ಇಂಡಿ ತಾಲ್ಲೂಕು<br>ವಿಜಯಪುರ ಜಿಲ್ಲೆ, ಕರ್ನಾಟಕ";
+
+
         document.getElementById("callTitle").innerText = "📞 ಕರೆ";
         document.getElementById("whatsappTitle").innerText = "💬 ವಾಟ್ಸಾಪ್";
         document.getElementById("whatsappText").innerText = "ಈಗಲೇ ಚಾಟ್ ಮಾಡಿ";
+        document.getElementById("visitText").innerText = "“ಫಾರ್ಮ್‌ಗೆ ಭೇಟಿ ನೀಡುತ್ತೀರಾ? ದಯವಿಟ್ಟು ಮೊದಲು ವಾಟ್ಸಾಪ್‌ನಲ್ಲಿ ನಮಗೆ ಸಂದೇಶ ಕಳುಹಿಸಿ, ನಾವು ನಿಮಗೆ ಲಭ್ಯವಿದ್ದೇವೆ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ!”";
 
+        
         document.getElementById("goatModalTitle").innerText = "🐐 ಹುಲಗಬಾಳದಲ್ಲಿ ಮೇಕೆ ಸಾಕಣೆ";
         document.getElementById("goatModalDesc").innerText = "ನಮ್ಮ ಮೇಕೆಗಳು ವಿಜಯಪುರದಲ್ಲಿ ನೈಸರ್ಗಿಕ ಮತ್ತು ಉತ್ತಮ ಆರೈಕೆಯೊಂದಿಗೆ ಸಾಕಲ್ಪಡುತ್ತವೆ.";
 
@@ -118,6 +128,8 @@ function switchLanguage() {
 
         document.getElementById("cropWhatsappBtn").innerText = "🌾 ಬೆಳೆಗಳ ಬೆಲೆ ತಿಳಿಯಿರಿ";
 
+        
+
 
     } else {
         document.documentElement.lang = "en";
@@ -152,6 +164,10 @@ function switchLanguage() {
         document.getElementById("card2Title").innerText = "🌱 Organic Crops";
         document.getElementById("card2Text").innerText =
             "Fresh chemical-free crops grown with love.";
+        
+        document.getElementById("galleryTitle").innerText = "Our Farm Gallery";
+        document.getElementById("galleryText").innerText = "Fresh, natural, and grown with care 🌱";
+
 
         document.getElementById("highlightTitle").innerText =
             "Farm Highlights";
@@ -177,10 +193,13 @@ function switchLanguage() {
         document.getElementById("ctaButton").innerText = "Chat on WhatsApp";
 
         document.getElementById("contactTitle").innerText = "Contact Us";
-        document.getElementById("addressTitle").innerText = "📍 Address";
+        document.querySelector("#addressTitle h3").innerText = "📍 Address";
+        document.getElementById("farmAddress").innerHTML = "<strong>Hulagabal Natural Farm</strong><br>Atharga-586112, Indi Taluk<br>Vijayapura District, Karnataka";
+
         document.getElementById("callTitle").innerText = "📞 Call";
         document.getElementById("whatsappTitle").innerText = "💬 WhatsApp";
         document.getElementById("whatsappText").innerText = "Chat With Us Now";
+        document.getElementById("visitText").innerText = "“Visiting the farm? Please message us on WhatsApp first to ensure we are available to show you around!”";
 
         document.getElementById("goatModalTitle").innerText = "🐐 Goat Rearing at Hulagabal";
         document.getElementById("goatModalDesc").innerText = "Our goats are raised with the highest standards of natural care in Bijapur.";
@@ -221,8 +240,8 @@ function switchLanguage() {
         document.getElementById("crop6Text").innerText = "Sustainable farming with minimal chemicals and soil care.";
 
         document.getElementById("cropWhatsappBtn").innerText = "🌾 Get Crop Price";
-
-
+        document.getElementById("switchLang").innerText = "ಕನ್ನಡ";
+        
     }
 }
 
@@ -260,5 +279,44 @@ window.onclick = function (event) {
 
     if (event.target === cropModal) {
         cropModal.style.display = "none";
+    }
+};
+const images = document.querySelectorAll(".gallery-img");
+const modal = document.getElementById("galleryModal");
+const modalImg = document.getElementById("modalImg");
+const closeBtn = document.querySelector(".close");
+const nextBtn = document.querySelector(".right");
+const prevBtn = document.querySelector(".left");
+
+let currentIndex = 0;
+
+// Open modal
+images.forEach((img, index) => {
+    img.addEventListener("click", () => {
+        modal.style.display = "block";
+        modalImg.src = img.src;
+        currentIndex = index;
+    });
+});
+
+// Close modal
+closeBtn.onclick = () => modal.style.display = "none";
+
+// Next image
+nextBtn.onclick = () => {
+    currentIndex = (currentIndex + 1) % images.length;
+    modalImg.src = images[currentIndex].src;
+};
+
+// Previous image
+prevBtn.onclick = () => {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    modalImg.src = images[currentIndex].src;
+};
+
+// Close when clicking outside
+modal.onclick = (e) => {
+    if (e.target === modal) {
+        modal.style.display = "none";
     }
 };

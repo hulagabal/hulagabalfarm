@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="logo1.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
@@ -31,8 +32,8 @@
             <li><a href="#" id="switchLang" onclick="switchLanguage()">ಕನ್ನಡ</a></li>
         </ul>
 
-        <a class="whatsapp-btn" href="https://wa.me/918970711727" target="_blank" id="waBtn">
-            WhatsApp Us
+        <a class="whatsapp-btn" href="https://wa.me/918970711727" target="_blank">
+            <i class="fab fa-whatsapp"></i> <span id="waBtn">WhatsApp Us</span>
         </a>
     </nav>
 
@@ -43,8 +44,8 @@
             <h1 id="heroTitle">Welcome to<br>Hulagabal Natural Farm</h1>
             <p id="heroText">Sustainable Farming • Goat Rearing • Natural Living</p>
             <a class="cta" href="https://wa.me/918970711727?text=Hi%20I%20am%20interested%20in%20your%20farm%20products"
-                target="_blank" id="heroBtn">
-                Get Price on WhatsApp
+                target="_blank">
+                <i class="fab fa-whatsapp"></i> <span id="heroBtn"> Get Price on WhatsApp </span>
             </a>
 
             <div class="trust-text" id="trustText">
@@ -80,6 +81,27 @@
 
         </div>
     </section>
+    <section class="gallery-section" aria-label="Farm Gallery">
+        <h2 class="section-title" id="galleryTitle">Our Farm Gallery</h2>
+        <p id="galleryText">Fresh, natural, and grown with care 🌱</p>
+
+        <div class="gallery-grid">
+            <img src="images/crops.jpg" alt="Farm Image 1" class="gallery-img">
+            <img src="images/farm1.jpg" alt="Farm Image 2" class="gallery-img">
+            <img src="images/goat1.jpg" alt="Farm Image 3" class="gallery-img">
+            <img src="images/crops.jpg" alt="Farm Image 1" class="gallery-img">
+            <img src="images/farm1.jpg" alt="Farm Image 2" class="gallery-img">
+            <img src="images/goat1.jpg" alt="Farm Image 3" class="gallery-img">
+        </div>
+    </section>
+
+    <!-- Popup Modal -->
+    <div class="gallery-modal" id="galleryModal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div class="nav left">&#10094;</div>
+        <div class="nav right">&#10095;</div>
+    </div>
 
     <section class="highlight" id="highlights" aria-label="Farm Highlights">
         <h2 class="section-title" id="highlightTitle">Farm Highlights</h2>
@@ -108,38 +130,24 @@
 
         </div>
     </section>
-    <section id="gallery">
-
-        <h2 class="section-title">Farm Gallery</h2>
-
-
-        <div class="gallery-grid">
-            <img src="images/goat1.jpg" alt="Goats at farm">
-            <img src="images/farm1.jpg" alt="Farm land">
-            <img src="images/crops.jpg" alt="Organic crops">
-            <img src="images/water.jpg" alt="Water source">
-            <img src="images/goat2.jpg" alt="Healthy goats">
-            <img src="images/field.jpg" alt="Green field">
-        </div>
-    </section>
     <section class="cta-section" aria-label="Call to Action">
         <h2 id="ctaTitle">Want Fresh Farm Products Directly?</h2>
         <p id="ctaText">Chat with us now and get today's best price</p>
-        <a href="https://wa.me/918970711727?text=Hi%20I%20want%20farm%20products" target="_blank" class="cta"
-            id="ctaButton">
-            Chat on WhatsApp
+        <a href="https://wa.me/918970711727?text=Hi%20I%20want%20farm%20products" target="_blank" class="cta">
+            <i class="fab fa-whatsapp"></i> <span id="ctaButton"> Chat on WhatsApp </span>
         </a>
     </section>
-
     <section id="contact" aria-label="Contact Information">
         <h2 class="section-title" id="contactTitle">Contact Us</h2>
 
         <div class="contact-grid">
-
-            <div class="contact-box">
-                <h3 id="addressTitle">📍 Address</h3>
-                <a href="https://maps.app.goo.gl/kkDXy5uMoLf9TeYC6" target="_blank" id="mapText"> View on Map </a>
+            <div class="contact-box" aria-label="Farm Address" id="addressTitle">
+                <h3>📍 Address</h3>
+                <p id="farmAddress"><strong>Hulagabal Natural Farm</strong><br>
+                    Atharga Village, Indi Taluk<br>
+                    Vijayapura District, Karnataka - 586112
                 </p>
+                <a href="https://maps.app.goo.gl/ns3WnrFA46Uy9zE3A" target="_blank">View on Map</a>
             </div>
 
             <div class="contact-box">
@@ -151,6 +159,8 @@
 
             <div class="contact-box">
                 <h3 id="whatsappTitle">💬 WhatsApp</h3>
+                <p id="visitText">“Visiting the farm? Please message us on WhatsApp first to ensure we are available to
+                    show you around!”</p>
                 <p>
                     <a href="https://wa.me/918970711727" target="_blank" id="whatsappText">
                         Chat With Us Now
@@ -175,6 +185,15 @@
                 <p class="copyright">© 2026 Hulagabal Farm. All Rights Reserved.</p>
             </div>
 
+            <!-- Social Icons -->
+            <div class="social-icons">
+                <a href="https://www.facebook.com/hulagabal" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/hulagabal/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/hulagabal" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.com/@hulagabal" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://wa.me/918970711727" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+
         </div>
     </footer>
 
@@ -197,8 +216,8 @@
                         and organic manure for farms.</span></li>
             </ul>
 
-            <a href="https://wa.me/918970711727" target="_blank" class="whatsapp-btn-small" id="goatWhatsappBtn">
-                🐐 Get Goat Price
+            <a href="https://wa.me/918970711727" target="_blank" class="whatsapp-btn-small">
+                <i class="fab fa-whatsapp"></i> <span id="goatWhatsappBtn">🐐 Get Goat Price </span>
             </a>
         </div>
     </div>
@@ -227,12 +246,11 @@
                         chemicals and soil care.</span></li>
             </ul>
 
-            <a href="https://wa.me/918970711727" target="_blank" class="whatsapp-btn-small" id="cropWhatsappBtn">
-                🌾 Get Crop Price
+            <a href="https://wa.me/918970711727" target="_blank" class="whatsapp-btn-small">
+                <i class="fab fa-whatsapp"></i> <span id="cropWhatsappBtn" 🌾 Get Crop Price </span>
             </a>
         </div>
     </div>
-
     <script src="script.js"></script>
 </body>
 
