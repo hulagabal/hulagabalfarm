@@ -7,6 +7,18 @@ function toggleMenu() {
     document.querySelector("nav ul").classList.toggle("show");
 }
 
+function closeMenu() {
+    document.querySelector("nav ul").classList.remove("show");
+}
+
+// Close menu when any navigation link is clicked
+document.addEventListener("DOMContentLoaded", function() {
+    const navLinks = document.querySelectorAll("nav ul li a");
+    navLinks.forEach(link => {
+        link.addEventListener("click", closeMenu);
+    });
+});
+
 /* =========================
    LANGUAGE SWITCH
 ========================= */
